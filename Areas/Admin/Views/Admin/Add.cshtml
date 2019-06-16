@@ -1,0 +1,38 @@
+@model Antonia_Elena_Blog.Areas.Admin.ViewModels.BlogPostBindingModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center">CREATE A NEW POST</h1>
+
+<div class="container-fluid p-5">
+    <form method="post" asp-action="Add" asp-controller="Admin">
+        <label>Category</label>
+        <div class="form-group">
+            <label> <input asp-for="Category" value="Reisen" type="radio"/> Reisen</label>
+            <label> <input asp-for="Category" value="Rezepte&Kochinspo" type="radio"/> Rezepte&Kochinspo</label>
+            <label> <input asp-for="Category" value="Gedanken" type="radio"/> Gedanken</label>
+        </div>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" placeholder="Title" asp-for="Title">
+        </div>
+        <div class="form-group">
+            <label>Publisher/Writer</label>
+            <input type="text" class="form-control" placeholder="Publisher/Writer" asp-for="Writer">
+        </div>
+        <div class="form-group">
+            <label>Image Url</label>
+            <input type="text" class="form-control" placeholder="Image URL" asp-for="ImageUrl">
+        </div>
+        <div class="form-group">
+            <label>Content</label>
+            <textarea asp-for="Content"></textarea>
+        </div>
+        <div class="form-group">
+            <input asp-for="IsDraft"/>
+            <label>Save As Draft</label>
+        </div>
+        <button type="submit" class="btn btn-info">SUBMIT</button>
+    </form>
+</div>

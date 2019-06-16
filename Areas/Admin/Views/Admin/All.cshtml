@@ -1,0 +1,64 @@
+@model IEnumerable<Antonia_Elena_Blog.Areas.Admin.ViewModels.BlogPostBindingModel>
+@{
+    ViewData["Title"] = "Published";
+    int counter = 1;
+}
+
+
+<h1 class="text-center pb-3">ALL POSTS</h1>
+
+@foreach (var blogPost in Model)
+{
+    <div class="container p-4 mb-5 blog-container">
+        <span class="p-2 counter">@counter</span>
+        @if (blogPost.IsDraft)
+        {
+            <span class="p-2 draft">Draft</span>
+            <div>
+                <button type="button" class="btn btn-success mt-3">
+                    <a asp-action="Publish" asp-controller="Admin" asp-route-id="@blogPost.Id"><i class="far fa-check-circle"></i> Publish</a>
+                </button>
+            </div>
+        }
+        else
+        {
+            <span class="p-2 published">Published</span>
+        }
+        <h6 class="text-center">@blogPost.Category</h6>
+        <h3 class="text-center">@blogPost.Title.ToUpper()</h3>
+        <h6 class="text-center">@blogPost.CreatedOn.ToString("dd/MM/yyyy")</h6>
+        <hr class="blog-title-divider"/>
+        <p class="text-center">
+            <em>@blogPost.Writer</em>
+        </p>
+        <div class="row">
+
+            @if (blogPost.ImageUrl != null)
+            {
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid blog" src="@blogPost.ImageUrl" alt="Card image" width="80%" height="80%">
+                </div>
+            }
+            else
+            {
+                <div class="col-lg-6 text-center p-5" style="background-color: whitesmoke">No Image Availabe</div>
+            }
+            <div class="col-lg-6 text-left blog-content">
+                @Html.Raw(blogPost.Content)
+                <div class="text-right">
+                    <h6 class="btn forwards-backwards-btn">
+                        <a><i class="fas fa-chevron-left"></i> Back</a>
+                    </h6>
+                    <h6 class="btn forwards-backwards-btn edit">
+                        <a asp-action="Edit" asp-controller="Admin" asp-route-id="@blogPost.Id"><i class="far fa-edit"></i> Edit</a>
+                    </h6>
+                    <h6 class="btn forwards-backwards-btn delete">
+                        <a asp-action="Delete" asp-controller="Admin" asp-route-id="@blogPost.Id"><i class="fas fa-trash"></i> Delete</a>
+                    </h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    counter++;
+}

@@ -1,0 +1,27 @@
+@model Antonia_Elena_Blog.Areas.Admin.ViewModels.BlogPostBindingModel
+@{
+    ViewData["Title"] = "Publish Draft";
+}
+
+
+<form method="post" asp-action="Publish" asp-controller="Admin">
+    <div tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Save Changes To Post "@Model.Title"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Would you really like to save the changes?
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Yes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
