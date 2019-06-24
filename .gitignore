@@ -333,3 +333,6 @@ FurryPal.Web/appsettings.Development.json
 FurryPal.Data/developerEnvConnectionString.json
 # .DS_Store
 .DS_Store
+
+# solution file
+Antonia_Elena_Blog.sln
