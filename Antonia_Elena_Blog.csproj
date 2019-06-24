@@ -2,7 +2,6 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
-        <UserSecretsId>aspnet-Antonia_Elena_Blog-FF250C3E-AB99-49EA-A4CC-DDC693354E8C</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
