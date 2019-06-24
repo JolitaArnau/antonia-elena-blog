@@ -1,6 +1,4 @@
 using System;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Antonia_Elena_Blog.Models
 {

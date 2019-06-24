@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Antonia_Elena_Blog.Data;
 using Microsoft.AspNetCore.Mvc;
 using Antonia_Elena_Blog.Models;

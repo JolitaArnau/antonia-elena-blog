@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Antonia_Elena_Blog.Data;
@@ -73,7 +72,7 @@ namespace Antonia_Elena_Blog
                 .AddDefaultTokenProviders();
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
                 .AddRazorPagesOptions(options =>
                 {
                     options.AllowAreas = true;
