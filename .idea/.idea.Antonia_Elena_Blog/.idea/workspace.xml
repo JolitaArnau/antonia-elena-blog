@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66b7402a-6e56-4c31-a2af-ec4f7937272d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Antonia_Elena_Blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Antonia_Elena_Blog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,7 @@
           <entry key="aspnetuserroles" value="2" />
           <entry key="aspnetusers" value="5" />
           <entry key="blogposts" value="5" />
-          <entry key="cs" value="69" />
+          <entry key="cs" value="70" />
           <entry key="cshtml" value="156" />
           <entry key="css" value="13" />
           <entry key="jpg" value="2" />
@@ -71,7 +71,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="69" />
+          <entry key="C#" value="70" />
           <entry key="CSS" value="13" />
           <entry key="Database Element" value="14" />
           <entry key="Image" value="7" />
@@ -84,7 +84,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="6" />
-          <entry key="cs" value="4353" />
+          <entry key="cs" value="4363" />
           <entry key="cshtml" value="6703" />
           <entry key="css" value="1728" />
           <entry key="js" value="867" />
@@ -93,7 +93,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4353" />
+          <entry key="C#" value="4363" />
           <entry key="CSS" value="1728" />
           <entry key="JSON" value="31" />
           <entry key="JavaScript" value="867" />
@@ -134,7 +134,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Areas/Admin/Controllers/AdminController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
@@ -162,6 +162,30 @@
                 <marker date="1560676513826" expanded="true" signature="5450:5826" ph="{...}" />
                 <marker date="1560676513826" expanded="true" signature="5598:5661" ph="{...}" />
                 <marker date="1560676513826" expanded="true" signature="5961:6233" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-74">
+              <folding>
+                <marker date="1561378440181" expanded="false" signature="6:552" ph="..." />
+                <marker date="1561378440181" expanded="true" signature="582:4884" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="609:4882" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="668:731" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="954:3814" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="1027:1304" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="2272:2715" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="3023:3290" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="3352:3588" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="3640:3802" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="4002:4876" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="4049:4170" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="4187:4302" ph="{...}" />
+                <marker date="1561378440181" expanded="true" signature="4536:4864" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -347,7 +371,6 @@
         <option value="$PROJECT_DIR$/Areas/Admin/Views/Shared/_AdminLayout.cshtml" />
         <option value="$PROJECT_DIR$/Models/User.cs" />
         <option value="$PROJECT_DIR$/Mapper/MapperProfile.cs" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Areas/Admin/Views/Admin/Delete.cshtml" />
         <option value="$PROJECT_DIR$/Models/BlogPost.cs" />
         <option value="$PROJECT_DIR$/Areas/Admin/ViewModels/BlogPostBindingModel.cs" />
@@ -361,6 +384,7 @@
         <option value="$PROJECT_DIR$/Areas/Admin/Views/Admin/Drafts.cshtml" />
         <option value="$PROJECT_DIR$/wwwroot/css/site.css" />
         <option value="$PROJECT_DIR$/Areas/Admin/Controllers/AdminController.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
       </list>
     </option>
   </component>
@@ -370,10 +394,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1292" />
-    <option name="height" value="1012" />
+    <option name="width" value="1280" />
+    <option name="height" value="1011" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -483,12 +507,12 @@
       <workItem from="1557475127417" duration="7856000" />
       <workItem from="1557574868812" duration="13415000" />
       <workItem from="1558096563278" duration="6789000" />
-      <workItem from="1560674899165" duration="1459000" />
+      <workItem from="1560674899165" duration="2780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90000000" />
+    <option name="totallyTimeSpent" value="91321000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,10 +524,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="1011" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19706841" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19706841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -704,13 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -974,6 +991,28 @@
             <marker date="1560676513826" expanded="true" signature="5450:5826" ph="{...}" />
             <marker date="1560676513826" expanded="true" signature="5598:5661" ph="{...}" />
             <marker date="1560676513826" expanded="true" signature="5961:6233" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <folding>
+            <marker date="1561378440181" expanded="false" signature="6:552" ph="..." />
+            <marker date="1561378440181" expanded="true" signature="582:4884" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="609:4882" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="668:731" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="954:3814" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="1027:1304" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="2272:2715" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="3023:3290" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="3352:3588" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="3640:3802" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="4002:4876" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="4049:4170" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="4187:4302" ph="{...}" />
+            <marker date="1561378440181" expanded="true" signature="4536:4864" ph="{...}" />
           </folding>
         </state>
       </provider>

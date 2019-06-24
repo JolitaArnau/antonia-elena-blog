@@ -36,19 +36,28 @@ namespace Antonia_Elena_Blog
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            
+
             var connection = Configuration["ConnectionString:DefaultConnection"];
 
             // db
 
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
-            
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+                services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+            else
+                services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
+
+
+            // Automatically perform database migration
+            services.BuildServiceProvider().GetService<ApplicationDbContext>().Database.Migrate();
+
+
             // auto mapper configuration
-            
+
             var mapperConfig = new MapperConfiguration(m => m.AddProfile(new MapperProfile()));
             var mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
-            
+
             // identity
 
             services.Configure<IdentityOptions>(options =>
@@ -74,20 +83,19 @@ namespace Antonia_Elena_Blog
                     //options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
                     options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
                 });
-            
+
             services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = $"/Identity/Account/Login";
                 options.LogoutPath = $"/Identity/Account/Logout";
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
-            
+
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("Administrator",
                     authBuilder => { authBuilder.RequireRole("Administrator"); });
             });
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -109,7 +117,7 @@ namespace Antonia_Elena_Blog
             app.UseCookiePolicy();
 
             app.UseAuthentication();
-            
+
             app.UseMiddleware<SeederMiddleware>();
 
 
@@ -119,7 +127,7 @@ namespace Antonia_Elena_Blog
                     name: "areas",
                     template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
-                
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
