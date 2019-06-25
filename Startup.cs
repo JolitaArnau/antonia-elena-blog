@@ -11,7 +11,6 @@ using Antonia_Elena_Blog.Models;
 using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 namespace Antonia_Elena_Blog
 {
@@ -51,9 +50,9 @@ namespace Antonia_Elena_Blog
 
             // auto mapper configuration
 
-            var mapperConfig = new MapperConfiguration(m => m.AddProfile(new MapperProfile()));
-            var mapper = mapperConfig.CreateMapper();
-            services.AddSingleton(mapper);
+//            var mapperConfig = new MapperConfiguration(m => m.AddProfile(new MapperProfile()));
+//            var mapper = mapperConfig.CreateMapper();
+//            services.AddSingleton(mapper);
 
             // identity
 
