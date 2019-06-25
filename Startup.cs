@@ -11,6 +11,7 @@ using Antonia_Elena_Blog.Models;
 using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace Antonia_Elena_Blog
 {
@@ -76,7 +77,6 @@ namespace Antonia_Elena_Blog
                 .AddRazorPagesOptions(options =>
                 {
                     options.AllowAreas = true;
-                    //options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
                     options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
                 });
 
@@ -97,6 +97,7 @@ namespace Antonia_Elena_Blog
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+         
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
