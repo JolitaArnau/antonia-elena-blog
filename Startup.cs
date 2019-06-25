@@ -50,9 +50,9 @@ namespace Antonia_Elena_Blog
 
             // auto mapper configuration
 
-//            var mapperConfig = new MapperConfiguration(m => m.AddProfile(new MapperProfile()));
-//            var mapper = mapperConfig.CreateMapper();
-//            services.AddSingleton(mapper);
+            var mapperConfig = new MapperConfiguration(m => m.AddProfile(new MapperProfile()));
+            var mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
 
             // identity
 

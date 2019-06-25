@@ -25,7 +25,6 @@ namespace Antonia_Elena_Blog.Controllers
             {
                 return this.RedirectToAction("Dashboard", "Admin", new {area = "Admin"});
             }
-
             
             return View();
         }
