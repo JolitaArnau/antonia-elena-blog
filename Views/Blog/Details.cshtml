@@ -1,33 +1,40 @@
-
+@model Antonia_Elena_Blog.Areas.Admin.ViewModels.BlogPostBindingModel
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = Model.Title;
     Layout = "_Layout";
 }
 
-<div class="container p-4 mb-5 blog-container">
-    <h6 class="text-center">Reisen</h6>
-    <h3 class="text-center">EINE WUNDERVOLLE REISE</h3>
-    <h6 class="text-center">05/05/2019</h6>
-    <hr class="blog-title-divider"/>
-    <div class="row">
-        <div class="col-lg-6 text-center">
-            <img class="img-fluid blog" src="~/images/about/about_me_2.jpg" alt="Card image" width="80%" height="80%">
-        </div>
-        <div class="col-lg-6 text-left">
-            <p>
-                Previously when we talked about what defines good typography, we mentioned that line lengths can have a lot of impact on readability. Lines that are either too long or too short will make the text hard to read for your readers. Unlike paper or PDF documents, webpages are resizable. Container widths on webpages are often specified in percentages rather than pixels or millimeters, so it is quite difficult for web designers to use only one percentage value to get proper line lengths across a variety of viewport sizes.
+<div class="d-flex justify-content-center p-5">
+    <div class="col-lg-8 text-center p-4 blog-container">
+        <h6 class="text-center">@Model.Category</h6>
+        <h3 class="text-center">@Model.Title.ToUpper()</h3>
+        <h6 class="text-center">@Model.CreatedOn.ToString("dd/MM/yyyy")</h6>
+        <hr class="blog-title-divider"/>
+        <p class="text-center">
+            <em>@Model.Writer</em>
+        </p>
+        <div class="row">
 
-                Luckily, by using the right CSS unit and properties, it is still possible to get the line lengths right on your webpages. In this article, I will show you how.
-            </p>
-            <p>
-                Previously when we talked about what defines good typography, we mentioned that line lengths can have a lot of impact on readability. Lines that are either too long or too short will make the text hard to read for your readers. Unlike paper or PDF documents, webpages are resizable. Container widths on webpages are often specified in percentages rather than pixels or millimeters, so it is quite difficult for web designers to use only one percentage value to get proper line lengths across a variety of viewport sizes.
-
-                Luckily, by using the right CSS unit and properties, it is still possible to get the line lengths right on your webpages. In this article, I will show you how.
-            </p>
+            @if (Model.ImageUrl != null)
+            {
+                <div class="col-lg-12 justify-content-center">
+                    <img class="img-fluid blog" src="@Model.ImageUrl" alt="Card image" width="50%" height="50%">
+                </div>
+            }
+            else
+            {
+                <div class="col-lg-6 text-center p-5" style="background-color: whitesmoke">No Image Availabe</div>
+            }
         </div>
+        <div class="col-lg-12 text-center blog-content">
+            @Html.Raw(Model.Content)
+        </div>
+
     </div>
 </div>
 
 <div class="row text-left p-5">
-    <h6 class="btn forwards-backwards-btn"><a><i class="fas fa-chevron-left"></i> Zurück</a></h6>
+    <h6 class="btn forwards-backwards-btn">
+        <a onclick="window.history.back()"><i class="fas fa-chevron-left"></i> Zurück</a>
+    </h6>
 </div>

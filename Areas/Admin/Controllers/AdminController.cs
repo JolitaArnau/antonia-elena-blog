@@ -127,8 +127,6 @@ namespace Antonia_Elena_Blog.Areas.Admin.Controllers
             blogPost.Writer = model.Writer;
             blogPost.IsDraft = model.IsDraft;
 
-            ;
-
             this.dbContext.BlogPosts.Update(blogPost);
             await this.dbContext.SaveChangesAsync();
 
