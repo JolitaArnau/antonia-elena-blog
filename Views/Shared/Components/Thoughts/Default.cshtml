@@ -1,6 +1,6 @@
-@model IEnumerable<Antonia_Elena_Blog.Areas.Admin.ViewModels.BlogPostBindingModel>
+@model IEnumerable<Your_Blog_Template.Areas.Admin.ViewModels.BlogPostBindingModel>
 @{
-    ViewData["Title"] = "Gedanken";
+    ViewData["Title"] = "Thoughts";
     Layout = "_Layout";
 }
 
@@ -8,22 +8,21 @@
     <ul class="nav justify-content-center">
         <li class="nav-item pl-3">
             <a class="nav-link category btn" a asp-action="Recipes" asp-controller="Blog">
-                <h6>Rezepte & Kochinspiration</h6>
+                <h6>Recipes & Cooking Inspiration</h6>
             </a>
         </li>
         <li class="nav-item pl-3">
             <a class="nav-link category btn" asp-action="Travelling" asp-controller="Blog">
-                <h6>Reisen</h6>
+                <h6>Travelling</h6>
             </a>
         </li>
         <li class="nav-item pl-3">
             <a class="nav-link category btn" asp-action="Thoughts" asp-controller="Blog">
-                <h6>Gedanken</h6>
+                <h6>Thoughts</h6>
             </a>
         </li>
     </ul>
 </div>
-
 
 @foreach (var blogPost in Model)
 {

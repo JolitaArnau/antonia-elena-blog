@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Antonia_Elena_Blog
+namespace Your_Blog_Template
 {
     public class Program
     {

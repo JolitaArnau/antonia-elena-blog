@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
-using Antonia_Elena_Blog.Data;
 using Microsoft.AspNetCore.Mvc;
-using Antonia_Elena_Blog.Models;
 using Microsoft.AspNetCore.Identity;
+using Your_Blog_Template.Data;
+using Your_Blog_Template.Models;
 
-namespace Antonia_Elena_Blog.Controllers
+namespace Your_Blog_Template.Controllers
 {
     public class HomeController : BaseController
     {
@@ -37,8 +37,8 @@ namespace Antonia_Elena_Blog.Controllers
             return View();
         }
         
-        [Route("books")]
-        public IActionResult Books()
+        [Route("products")]
+        public IActionResult Products()
         {
             return View();
         }

@@ -5,15 +5,15 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Antonia_Elena_Blog.Data;
-using Antonia_Elena_Blog.Mapper;
-using Antonia_Elena_Blog.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Your_Blog_Template.Data;
+using Your_Blog_Template.Mapper;
+using Your_Blog_Template.Models;
 
-namespace Antonia_Elena_Blog
+namespace Your_Blog_Template
 {
     public class Startup
     {

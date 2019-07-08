@@ -1,6 +1,6 @@
 using System;
 
-namespace Antonia_Elena_Blog.Areas.Admin.ViewModels
+namespace Your_Blog_Template.Areas.Admin.ViewModels
 {
     public class BlogPostBindingModel
     {

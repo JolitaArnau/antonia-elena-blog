@@ -1,4 +1,8 @@
-﻿body {
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: #f7fbfc;
     line-height: 1.6em;
 }
@@ -138,8 +142,8 @@ body > div.row.text-center.social-media {
 }
 
 .instagram-feed-about > a > img,
-#first-book > div > div > div.col-lg-6.text-center > img,
-#second-book > div > div > div.col-lg-6.text-center > img,
+#first-product > div > div > div.col-lg-6.text-center > img,
+#second-product > div > div > div.col-lg-6.text-center > img,
 .logo {
     -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
@@ -147,18 +151,6 @@ body > div.row.text-center.social-media {
 
 .insta-feed:hover {
     opacity: 0.8;
-}
-
-#first-book > div > div > div:nth-child(1) > p:nth-child(4) > button {
-    background-color: #7fc2cb !important;
-    border-color: #7fc2cb !important;
-    border-radius: 0;
-}
-
-#second-book > div > div > div:nth-child(2) > p:nth-child(4) > button {
-    background-color: #D37173 !important;
-    border-color: #D37173 !important;
-    border-radius: 0;
 }
 
 .footer {

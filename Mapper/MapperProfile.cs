@@ -1,8 +1,8 @@
-using Antonia_Elena_Blog.Areas.Admin.ViewModels;
-using Antonia_Elena_Blog.Models;
 using AutoMapper;
+using Your_Blog_Template.Areas.Admin.ViewModels;
+using Your_Blog_Template.Models;
 
-namespace Antonia_Elena_Blog.Mapper
+namespace Your_Blog_Template.Mapper
 {
     public class MapperProfile : Profile
     {

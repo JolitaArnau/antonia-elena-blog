@@ -1,9 +1,9 @@
-using Antonia_Elena_Blog.Data;
-using Antonia_Elena_Blog.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Your_Blog_Template.Data;
+using Your_Blog_Template.Models;
 
-namespace Antonia_Elena_Blog.Controllers
+namespace Your_Blog_Template.Controllers
 {
     public class BaseController : Controller
     {

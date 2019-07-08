@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Antonia_Elena_Blog.Areas.Admin.ViewModels;
-using Antonia_Elena_Blog.Data;
-using Antonia_Elena_Blog.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Your_Blog_Template.Areas.Admin.ViewModels;
+using Your_Blog_Template.Data;
+using Your_Blog_Template.Models;
 
-namespace Antonia_Elena_Blog.Areas.Admin.Controllers
+namespace Your_Blog_Template.Areas.Admin.Controllers
 {
     [Authorize(Roles = "Administrator")]
     [Area("Admin")]

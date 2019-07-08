@@ -1,12 +1,12 @@
 ﻿using System.IO;
-using Antonia_Elena_Blog.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
+using Your_Blog_Template.Models;
 
-namespace Antonia_Elena_Blog.Data
+namespace Your_Blog_Template.Data
 {
     public class ApplicationDbContext : IdentityDbContext<User, IdentityRole, string>
     {

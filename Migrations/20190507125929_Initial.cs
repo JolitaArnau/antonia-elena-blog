@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Antonia_Elena_Blog.Migrations
+namespace Your_Blog_Template.Migrations
 {
     public partial class Initial : Migration
     {

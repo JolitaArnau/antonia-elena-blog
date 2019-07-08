@@ -4,16 +4,16 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using Antonia_Elena_Blog.Controllers;
-using Antonia_Elena_Blog.Data;
-using Antonia_Elena_Blog.Models;
+using Your_Blog_Template.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Your_Blog_Template.Data;
+using Your_Blog_Template.Models;
 
-namespace Antonia_Elena_Blog.Areas.Identity.Pages.Account
+namespace Your_Blog_Template.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class RegisterModel : PageModel

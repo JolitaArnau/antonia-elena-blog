@@ -3,7 +3,7 @@ using System.Net.Mail;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.UI.Services;
 
-namespace Antonia_Elena_Blog
+namespace Your_Blog_Template
 {
     public class EmailSender : IEmailSender
     {
