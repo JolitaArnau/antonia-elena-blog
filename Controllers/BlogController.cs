@@ -1,16 +1,16 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Your_Blog_Template.Areas.Admin.ViewModels;
-using Your_Blog_Template.Data;
-using Your_Blog_Template.Models;
-
 namespace Your_Blog_Template.Controllers
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using AutoMapper;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using Areas.Admin.ViewModels;
+    using Data;
+    using Models;
+
     public class BlogController : BaseController
     {
         private readonly IMapper mapper;
