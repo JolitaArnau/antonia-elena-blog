@@ -44,7 +44,6 @@ namespace Your_Blog_Template
             else
                 services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
 
-
             // Automatically perform database migration
             services.BuildServiceProvider().GetService<ApplicationDbContext>().Database.Migrate();
 
