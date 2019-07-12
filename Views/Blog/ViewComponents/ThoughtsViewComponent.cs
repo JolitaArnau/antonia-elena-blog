@@ -23,7 +23,7 @@ namespace Your_Blog_Template.Views.Blog.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var recipes = await this.dbContext.BlogPosts.Where(c => c.Category.Equals("Gedanken"))
+            var recipes = await this.dbContext.BlogPosts.Where(c => c.Category.Equals("Thoughts"))
                 .ToArrayAsync();
 
             var recipesViewModel = this.mapper.Map<BlogPost[], IEnumerable<BlogPostBindingModel>>(recipes)
