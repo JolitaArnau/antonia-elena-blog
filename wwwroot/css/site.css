@@ -202,3 +202,9 @@ body > div.row.text-center.social-media {
 .tox.tox-tinymce {
     height: 400px !important;
 }
+
+@media only screen and (max-width: 991px) {
+    .instagram-display-none-on-mobile {
+        display: none;
+    }
+}
