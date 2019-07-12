@@ -328,9 +328,9 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
-appsettings.json
-appsettings.Development.json
-Data/developerEnvConnectionString.json
+your-blog-template/appsettings.json
+your-blog-template/appsettings.Development.json
+your-blog-template/Data/developerEnvConnectionString.json
 
 # .DS_Store
 .DS_Store
